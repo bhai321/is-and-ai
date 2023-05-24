@@ -1,0 +1,25 @@
+TML File:
+<!DOCTYPE html>
+<html>
+<head>
+<title>Diffie-Hellman Key Exchange</title>
+</head>
+<body>
+<h1>Diffie-Hellman Key Exchange</h1>
+<p>Enter a prime number and a base value:</p>
+<form>
+<label for="prime">Prime number:</label>
+<input type="number" id="prime" name="prime"><br><br>
+<label for="base">Base value:</label>
+<input type="number" id="base" name="base"><br><br>
+<button type="button" onclick="generateKeys()">Generate Keys</button>
+</form>
+<p>Public keys:</p>
+<p>Alice: <span id="alicePubKey"></span></p>
+<p>Bob: <span id="bobPubKey"></span></p>
+<p>Shared secret:</p>
+<p><span id="sharedSecret"></span></p>
+<script src="script.js"></script>
+</body>
+</html>
+
